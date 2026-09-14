@@ -399,7 +399,7 @@
   </ArtifactName>
  </FileName>
  <FileName filename="Edge - search terms.tsv" description="Edge Search Terms">
-  <ArtifactName artifactname="TSK_WEB_SEARCH_QUERY" comment="Chrome Search Terms">
+  <ArtifactName artifactname="TSK_WEB_SEARCH_QUERY" comment="Edge Search Terms">
    <AttributeName attributename="TSK_DATETIME_ACCESSED" columnName="Last Visit Time" required="no" />
    <AttributeName attributename="TSK_TEXT" columnName="Search Term" required="no" />
    <AttributeName attributename="TSK_DOMAIN" columnName="URL" required="no" />
@@ -432,7 +432,7 @@
   </ArtifactName>
  </FileName>
  <FileName filename="installed apps - GMS.tsv" description="Installed Apps">
-  <ArtifactName artifactname="TSK_INSTALLED_PROG" comment="Installed Apps GSM">
+  <ArtifactName artifactname="TSK_INSTALLED_PROG" comment="Installed Apps (Google Mobile Services)">
    <AttributeName attributename="TSK_PROG_NAME" columnName="Bundle ID" required="no" />
   </ArtifactName>
  </FileName>
