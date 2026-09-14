@@ -18,6 +18,9 @@
    <AttributeName attributename="null" columnName="Snapshot Identifier" required="no" />
    <AttributeName attributename="null" columnName="Variant" required="no" />
    <AttributeName attributename="null" columnName="Snapshot" required="no" />
+   <AttributeName attributename="TSK_PROG_NAME" columnName="App Name" required="no" />
+   <AttributeName attributename="TSK_DATETIME" columnName="Date Modified" required="no" />
+   <AttributeName attributename="null" columnName="Png Path" required="no" />
   </ArtifactName>
  </FileName>
  <FileName filename="Bluetooth Paired.tsv" description="Paired Bluetooth devices">
@@ -57,6 +60,8 @@
    <AttributeName attributename="null" columnName="ISO Country Code" required="no" />
    <AttributeName attributename="null" columnName="Location" required="no" />
    <AttributeName attributename="null" columnName="Source File path" required="no" />
+   <AttributeName attributename="null" columnName="Name" required="no" />
+   <AttributeName attributename="null" columnName="ISO County Code" required="no" />
   </ArtifactName>
  </FileName>
  <FileName filename="Data Usage.tsv" description="Per process data usage">
@@ -69,6 +74,13 @@
    <AttributeName attributename="null" columnName="Usage Entry Timestamp" required="no" />
    <AttributeName attributename="null" columnName="Process Name" required="no" />
    <AttributeName attributename="null" columnName="ZKIND (as stored)" required="no" />
+   <AttributeName attributename="null" columnName="Live Usage Timestamp" required="no" />
+   <AttributeName attributename="TSK_PROG_NAME" columnName="Bundle ID" required="no" />
+   <AttributeName attributename="null" columnName="WIFI In" required="no" />
+   <AttributeName attributename="null" columnName="WIFI Out" required="no" />
+   <AttributeName attributename="TSK_BYTES_RECEIVED" columnName="WWAN IN" required="no" />
+   <AttributeName attributename="TSK_BYTES_SENT" columnName="WWAN Out" required="no" />
+   <AttributeName attributename="null" columnName="Table ID" required="no" />
   </ArtifactName>
  </FileName>
  <FileName filename="DHCP Received List.tsv" description="DHCP received list">
@@ -76,6 +88,8 @@
    <AttributeName attributename="TSK_NAME" columnName="Property Name" required="no" />
    <AttributeName attributename="TSK_VALUE" columnName="Property Value" required="no" />
    <AttributeName attributename="null" columnName="Source File" required="no" />
+   <AttributeName attributename="TSK_NAME" columnName="Key" required="no" />
+   <AttributeName attributename="TSK_VALUE" columnName="Value" required="no" />
   </ArtifactName>
  </FileName>
  <FileName filename="Notifications.tsv" description="Notifications">
@@ -438,6 +452,90 @@
    <AttributeName attributename="null" columnName="Last Associated/Roamed At" required="no" />
    <AttributeName attributename="null" columnName="Location Accuracy" required="no" />
    <AttributeName attributename="null" columnName="Source File" required="no" />
+  </ArtifactName>
+ </FileName>
+ <FileName filename="Calendar Items.tsv" description="Calendar Items">
+  <ArtifactName artifactname="TSK_CALENDAR_ENTRY" comment="Calendar Items">
+   <AttributeName attributename="TSK_DATETIME_START" columnName="Start Date" required="no" />
+   <AttributeName attributename="null" columnName="Start Timezone" required="no" />
+   <AttributeName attributename="TSK_DATETIME_END" columnName="End Date" required="no" />
+   <AttributeName attributename="null" columnName="End Timezone" required="no" />
+   <AttributeName attributename="null" columnName="All Day?" required="no" />
+   <AttributeName attributename="TSK_CALENDAR_ENTRY_TYPE" columnName="Summary" required="no" />
+   <AttributeName attributename="null" columnName="Calendar ID" required="no" />
+   <AttributeName attributename="null" columnName="Last Modified" required="no" />
+  </ArtifactName>
+ </FileName>
+ <FileName filename="Recent WebSearches.tsv" description="Recent Web Searches">
+  <ArtifactName artifactname="TSK_WEB_SEARCH_QUERY" comment="null">
+   <AttributeName attributename="TSK_DATETIME_ACCESSED" columnName="Date" required="no" />
+   <AttributeName attributename="TSK_TEXT" columnName="Search Term" required="no" />
+  </ArtifactName>
+ </FileName>
+ <FileName filename="Safari Web Search.tsv" description="Safari Browser">
+  <ArtifactName artifactname="TSK_WEB_SEARCH_QUERY" comment="null">
+   <AttributeName attributename="TSK_DATETIME_ACCESSED" columnName="Visit Time" required="no" />
+   <AttributeName attributename="TSK_TEXT" columnName="Search Term" required="no" />
+   <AttributeName attributename="null" columnName="URL" required="no" />
+   <AttributeName attributename="null" columnName="Visit Count" required="no" />
+   <AttributeName attributename="null" columnName="Title" required="no" />
+   <AttributeName attributename="null" columnName="iCloud Sync" required="no" />
+   <AttributeName attributename="null" columnName="Load Successful" required="no" />
+   <AttributeName attributename="null" columnName="Visit ID" required="no" />
+   <AttributeName attributename="null" columnName="Redirect Source" required="no" />
+   <AttributeName attributename="null" columnName="Redirect Destination" required="no" />
+   <AttributeName attributename="null" columnName="History Item ID" required="no" />
+  </ArtifactName>
+ </FileName>
+ <FileName filename="SMS &amp; iMessage - Messages.tsv" description="SMS - iMessage">
+  <ArtifactName artifactname="TSK_MESSAGE" comment="SMS - iMessage">
+   <AttributeName attributename="TSK_DATETIME" columnName="Message Timestamp" required="no" />
+   <AttributeName attributename="null" columnName="Read Timestamp" required="no" />
+   <AttributeName attributename="TSK_TEXT" columnName="Message" required="no" />
+   <AttributeName attributename="null" columnName="Service" required="no" />
+   <AttributeName attributename="null" columnName="Message Direction" required="no" />
+   <AttributeName attributename="null" columnName="Message Sent" required="no" />
+   <AttributeName attributename="null" columnName="Message Delivered" required="no" />
+   <AttributeName attributename="null" columnName="Message Read" required="no" />
+   <AttributeName attributename="null" columnName="Account" required="no" />
+   <AttributeName attributename="null" columnName="Account Login" required="no" />
+   <AttributeName attributename="null" columnName="Chat" required="no" />
+   <AttributeName attributename="null" columnName="Contact ID" required="no" />
+   <AttributeName attributename="null" columnName="Attachment Name" required="no" />
+   <AttributeName attributename="null" columnName="Attachment Path" required="no" />
+   <AttributeName attributename="null" columnName="Attachment Timestamp" required="no" />
+   <AttributeName attributename="null" columnName="Attachment Mimetype" required="no" />
+   <AttributeName attributename="null" columnName="Attachment Size (Bytes)" required="no" />
+   <AttributeName attributename="null" columnName="Message Row ID" required="no" />
+   <AttributeName attributename="TSK_THREAD_ID" columnName="Chat ID" required="no" />
+   <AttributeName attributename="null" columnName="From Me" required="no" />
+  </ArtifactName>
+ </FileName>
+ <FileName filename="Wifi Known Networks.tsv" description="Wifi Known Networks">
+  <ArtifactName artifactname="TSK_WIFI_NETWORK" comment="Wifi">
+   <AttributeName attributename="TSK_SSID" columnName="SSID" required="no" />
+   <AttributeName attributename="TSK_MAC_ADDRESS" columnName="BSSID" required="no" />
+   <AttributeName attributename="null" columnName="Network usage" required="no" />
+   <AttributeName attributename="null" columnName="Country code" required="no" />
+   <AttributeName attributename="TSK_DEVICE_ID" columnName="Device name" required="no" />
+   <AttributeName attributename="null" columnName="Manufacturer" required="no" />
+   <AttributeName attributename="null" columnName="Serial number" required="no" />
+   <AttributeName attributename="TSK_DEVICE_MODEL" columnName="Model name" required="no" />
+   <AttributeName attributename="TSK_DATETIME" columnName="Last joined" required="no" />
+   <AttributeName attributename="null" columnName="Last autojoined" required="no" />
+   <AttributeName attributename="null" columnName="Enabled" required="no" />
+  </ArtifactName>
+ </FileName>
+ <FileName filename="Wifi Network Store Model - Networks.tsv" description="Wifi Network Store Model - Networks">
+  <ArtifactName artifactname="TSK_WIFI_NETWORK" comment="Wifi">
+   <AttributeName attributename="TSK_DATETIME" columnName="Last Connected Timestamp" required="no" />
+   <AttributeName attributename="null" columnName="PK" required="no" />
+   <AttributeName attributename="TSK_SSID" columnName="SSID" required="no" />
+   <AttributeName attributename="TSK_GEO_LATITUDE" columnName="Latitude" required="no" />
+   <AttributeName attributename="TSK_GEO_LONGITUDE" columnName="Longitude" required="no" />
+   <AttributeName attributename="TSK_MAC_ADDRESS" columnName="BSSID" required="no" />
+   <AttributeName attributename="null" columnName="5 GHz Network" required="no" />
+   <AttributeName attributename="null" columnName="2.4 GHz Network" required="no" />
   </ArtifactName>
  </FileName>
 </iLeap_Files_To_Process>
